@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@Dblue: #252837;
+@Sblue: #585d6f;
+@Morange: #ffc000;
+@blackl:#000000;
+@white:#ffffff;
+@Dorange: #ef9a21;
+@fontLight: 1px 1px 7px white,
+    1px 0px 0px rgb(82 82 82 / 58%),
+    -5px 3px 12px white,
+    0px -4px 3px rgb(128 128 128 / 64%),
+    0px 1px 5px rgb(93 91 91 / 66%),
+    1px 1px 4px rgb(128 128 128 / 63%),
+    0px 1px 2px rgb(128 128 128 / 36%),
+    0px 0px 7px rgb(128 128 128 / 58%),
+    0px 0px 5px rgb(0 0 0 / 73%);
+
+// 第一幅
+header {
+    background-image: url('/images/index_01.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 225px;
+    max-height: 763px;
+    text-align: center;
+    @media (min-width:576px) {
+        height: 400px;
+    }
+    @media (min-width:992px) {
+        height: 500px;
+    }
+    .conWrap {
+        height: 100%;
+        color:@white ;
+    }
+    .formSubject {
+        font-size: 2.5rem;
+        position: relative;
+        text-shadow: @fontLight ;
+        @media (min-width:576px) {
+            font-size: 3rem;
+        }
+        @media (min-width:992px) {
+            font-size: 4.5rem;
+        }
+    }
+    .formSubject::after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 123;
+            width: 320px;
+            height: 40px;
+            left: 50%;
+            top: 50px;
+            transform: translateX(-50%);
+            background-image: url(/images/slogan.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            @media (min-width:576px) {
+                width: 500px;
+                height: 60px;
+            }
+            @media (min-width:992px) {
+                width: 680px;
+                height: 120px;
+            }
+    }
+
+}
+
+
+// 第二幅
+.secondwrp {
+    background-color: @Dblue;
+    color: @white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    @media (min-width:996px) {
+        font-size: 1.8rem;
+    }
+    .second_bg {
+        background-image: url(/images/index_02.jpg);
+        background-color: @Dblue;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        min-height: 140px;
+        @media (min-width:476px) {
+            background-size: auto 250px;
+            min-height: 250px;
+        }
+        @media (min-width:768px) {
+            background-size: 110%;
+            min-height: 280px;
+        }
+        @media (min-width:996px) {
+            background-size: cover;
+            min-height: 320px;
+        }
+        @media (min-width:1200px) {
+            background-size: 80%;
+            min-height: 300px;
+        }
+        @media (min-width:1400px) {
+            background-size: 60%;
+            min-height: 320px;
+        }
+    }
+}
+
+
+// 第三幅 第五幅
+.promoCard {
+    height: 200px;
+    @media (min-width:576px) {
+        height: 300px;
+    }
+    @media (min-width:768px) {
+        height: 430px;
+    }
+    @media (min-width:992px) {
+        height: 550px;
+    }
+    @media (min-width:1200px) {
+        height: 650px;
+    }
+    .photo { background-image: url('/images/index_03.jpg');
+             background-position: center;
+             background-size: cover;
+    }
+    .photo2 {
+        background-image: url('/images/index_09.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .text_block {
+        background-color: @Morange;
+        color: @Dblue;
+        line-height: 1.8;
+        font-weight: 600;
+        font-size: 1rem;
+        @media (min-width:768px) {
+            font-size: 1.2rem;
+        }
+
+        @media (min-width:992px) {
+            font-size: 1.8rem;
+        }
+    }
+}
+// 第四幅
+.strongSlogan {
+    background-color: @Dblue;
+    color:@Morange;
+
+    h1 {
+        font-weight: 700;
+    }
+    .sloganInfo{
+        background-image: url('/images/index_06.jpg');
+        background-size: cover;
+        background-position:center;
+        min-height: 100px;
+        color: @white;
+        font-size: 1rem;
+        font-weight: 600;
+        @media (min-width:768px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// 第六幅
+.joinTitle {
+        background-image: url(/images/index_12.jpg);
+        background-color: @Sblue;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70px;
+        @media (min-width:576px) {
+            background-size: cover;
+            height: 120px;
+        }
+        @media (min-width:768px) {
+            background-size: 100%;
+            height: 180px;
+        }
+        @media (min-width:1200px) {
+            background-size: 90%;
+            height: 180px;
+        }
+}
+// 第七幅
+.supphoto {
+    background-color: @Dblue;
+}
+// 第八幅
+.formstyle {
+    background-image: url('/images/index_15.jpg');
+    background-position: center;
+    background-size: cover;
+    color: @white;
+}
+.formstyle .form-control,button.btn {
+    border-radius: 1rem;
+}
+
+.btn-dorange {
+    background-color: @Dorange;
+    box-shadow: 0px 0px 0px 5px rgb(255 255 255 / 20%);
+}
+
+// 第七幅
+footer {
+    background-color: #5e616d;
+    color: @white;
+    text-align: center;
+    img {width: 40px;}
+    .h2 {font-weight: 900;}
+}
