@@ -46,7 +46,7 @@ header .formSubject::after {
   left: 50%;
   top: 50px;
   transform: translateX(-50%);
-  background-image: url(images/slogan.png);
+  background-image: url('images/slogan.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -76,7 +76,7 @@ header .formSubject::after {
   }
 }
 .secondwrp .second_bg {
-  background-image: url(images/index_02.jpg);
+  background-image: url('images/index_02.jpg');
   background-color: #252837;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,7 +185,7 @@ header .formSubject::after {
   }
 }
 .joinTitle {
-  background-image: url(images/index_12.jpg);
+  background-image: url('images/index_12.jpg');
   background-color: #585d6f;
   background-position: center;
   background-repeat: no-repeat;
