@@ -76,7 +76,7 @@ header .formSubject::after {
   }
 }
 .secondwrp .second_bg {
-  background-image: url('../images/index_02.jpg');
+  background-image: url('images/index_02.jpg');
   background-color: #252837;
   background-position: center;
   background-repeat: no-repeat;
